@@ -68,6 +68,10 @@ footer p a{
 	text-decoration: none;
 }
 
+.menu_bar {
+	display: none;
+}
+
 @media screen and (max-width: 768px){
 
 	.main .articles{
@@ -77,5 +81,42 @@ footer p a{
 	aside{
 		width:100%; 
 		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 440px){
+
+	header{
+		width: 100%;
+	}
+	
+	header nav{
+		width: 80%;
+		height: 100%;
+		margin:0;
+		position: fixed;
+		/* Se agrega si no de desea trabajar con el metodo toogle() */
+		left: -100%; 
+		
+	}
+
+	header nav ul li{
+		display: block;
+		border-bottom: 1px solid rgba(255,255,255,.3);
+	}
+
+	.menu_bar{
+		display: block;
+		width: 100%;
+		background:#ccc;
+	}
+
+	.menu_bar .bt-menu{
+		display: block;
+		padding: 20px;
+		background:#528FD5;
+		color:#fff;
+		text-decoration:none;
+		box-sizing:border-box; 
 	}
 }
